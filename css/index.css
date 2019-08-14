@@ -217,43 +217,51 @@ html body {
   color: #78BE21;
 }
 .container .section_rules {
-  border: 1px solid #6495ED;
+  /* border: 1px solid @color_primary; */
   padding: 10px;
   color: white;
   line-height: 1.5rem;
+  background: rgba(112, 128, 144, 0.3);
+}
+.container .all_sections {
+  border: 1px solid black;
 }
 .container #intro {
-  border: 1px solid #6495ED;
+  /* border: 1px solid @color_primary; */
   padding: 10px;
   color: white;
   line-height: 1.5rem;
+  background: rgba(112, 128, 144, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .container #skills {
-  border: 1px solid #6495ED;
+  /* border: 1px solid @color_primary; */
   padding: 10px;
   color: white;
   line-height: 1.5rem;
+  background: rgba(112, 128, 144, 0.3);
   display: flex;
   justify-content: center;
 }
 .container #work {
-  border: 1px solid #6495ED;
+  /* border: 1px solid @color_primary; */
   padding: 10px;
   color: white;
   line-height: 1.5rem;
+  background: rgba(112, 128, 144, 0.3);
   justify-content: left;
   padding: 60px;
   display: flex;
 }
 .container #contact {
-  border: 1px solid #6495ED;
+  /* border: 1px solid @color_primary; */
   padding: 10px;
   color: white;
   line-height: 1.5rem;
+  background: rgba(112, 128, 144, 0.3);
   justify-content: left;
   padding: 60px;
   display: flex;
