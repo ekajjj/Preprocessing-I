@@ -53,7 +53,136 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+@color_primary: #6495ED;
+@color_secondary: #78BE21;
+
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	font-size: 18px;
+
+	body {
+			background-image: url("../images/bg.jpg"); 
+			background-repeat: no-repeat;
+			background-size: cover;
+	}
+
 }
 
+
+.container {
+	align-items: center;
+	width: 800px;
+	margin: 30px auto;
+	color: white;
+	
+		header {	
+		font-size: 20px;
+			nav {
+				margin: auto;
+				padding: 40px;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				word-spacing: 55px;
+				
+				.nav_item {
+					border: 2px solid @color_secondary;
+					padding: 10px;
+					border-radius: 20px;
+					a {
+						text-decoration: none;
+						color: white;
+					}
+			
+				}
+				.nav_item:hover {
+					border: 2px solid @color_primary;
+				}
+			}
+		}
+
+		.list_property {
+			list-style-type: square;
+			font-size: 1rem;
+			padding: 20px;
+		}
+		ul {
+			.list_property;
+		}
+		.logo {
+			display: flex;
+			margin: auto 20px;
+			
+		}
+		h1 {
+			font-size: 1.5rem;
+			display: flex;
+			padding-bottom: 10px;
+			color: @color_secondary;
+			
+		}
+		.section_rules {
+			border: 1px solid @color_primary;
+			padding: 10px;
+			color: white;
+			line-height: 1.5rem;
+		}
+		#intro {
+			.section_rules;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			
+		}
+		
+		#skills {
+			.section_rules;
+			display: flex;
+			justify-content: center;			
+			
+		}
+
+		#work {
+			.section_rules;
+			justify-content: left;
+			padding: 60px;
+			display: flex;
+			
+		}
+
+		#contact {
+			
+		}
+		p {
+			line-height: 1.2rem;
+			margin: 20px auto;
+			display: flex;
+			justify-content: flex-start;
+		}
+		}	
+		
+	
+
+/*.container {
+	width: 800px;
+
+	header {	
+	font-size: 40px;
+	
+		nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		word-spacing: 30px;
+		align-items: center;
+	}
+
+	h1 {
+		font-size: 2rem;
+		color: @color_primary;
+	}
+}	
+}
+*/
