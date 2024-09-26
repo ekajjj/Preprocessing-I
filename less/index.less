@@ -53,7 +53,181 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+/* MVP completed:
+All content
+All variables
+Nested
+Two mixins
+Mobile view
+
+Stretch:
+Incorporated google font
+/*
+/* Variables */
+/* Variables */
+/* Variables */
+@color_primary: #6495ED;
+@color_secondary: #78BE21;
+@font_default: 'Source Sans Pro', sans-serif;
+
+html {
+	font-family: @font_default;
+	color: white;
+	font-size: 18px;
+
+	body {
+			background-image: url("../images/bg.jpg"); 
+			background-repeat: no-repeat;
+			background-size: cover;
+	}
+
 }
 
+
+.container {
+	align-items: center;
+	width: 800px;
+	margin: 30px auto;
+	color: white;
+	
+	/* Mobile view */
+	/* Mobile view */
+	/* Mobile view */
+	@media (max-width: 500px){
+		width: 500px;
+		
+	}
+		header {	
+		font-size: 20px;
+			nav {
+				margin: auto;
+				padding: 40px;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				word-spacing: 55px;
+				
+				.nav_item {
+					border: 2px solid @color_secondary;
+					padding: 10px;
+					border-radius: 20px;
+					a {
+						text-decoration: none;
+						color: white;
+					}
+			
+				}
+				.nav_item:hover {
+					border: 2px solid @color_primary;
+				}
+			}
+		}
+
+
+		/* Mix-in */
+		/* Mix-in */
+		/* Mix-in */
+		.list_property {
+			list-style-type: square;
+			font-size: 1rem;
+			padding: 20px;
+		}
+		ul {
+			.list_property;
+		}
+		.logo {
+			display: flex;
+			margin: auto 20px;
+			
+		}
+		h1 {
+			font-size: 1.5rem;
+			display: flex;
+			padding-bottom: 10px;
+			color: @color_secondary;
+			
+		}
+
+		/* Mix-in 2 */
+		/* Mix-in 2 */
+		/* Mix-in 2 */
+		.section_rules {
+			/* border: 1px solid @color_primary; */
+			padding: 10px;
+			color: white;
+			line-height: 1.5rem;
+			background: rgba(112,128,144,0.3)
+		}
+		.all_sections {
+			border: 1px solid black;
+		}
+		#intro {
+			.section_rules;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+			
+		}
+		
+		#skills {
+			.section_rules;
+			display: flex;
+			justify-content: center;			
+			
+		}
+
+		#work {
+			.section_rules;
+			justify-content: left;
+			padding: 60px;
+			display: flex;
+			
+		}
+
+		#contact {
+			.section_rules;
+			
+			justify-content: left;
+			padding: 60px;
+			display: flex;
+			
+				.button_submit {
+					border: 1px solid @color_secondary;
+					align-items: center;
+					width: 25%;
+				}
+			
+		}
+		p {
+			line-height: 1.2rem;
+			margin: 20px auto;
+			display: flex;
+			justify-content: flex-start;
+		}
+		}	
+		
+	
+
+/*.container {
+	width: 800px;
+
+	header {	
+	font-size: 40px;
+	
+		nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		word-spacing: 30px;
+		align-items: center;
+	}
+
+	h1 {
+		font-size: 2rem;
+		color: @color_primary;
+	}
+}	
+}
+*/
